@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Auto Fury LLC – Home</title>
-  <meta name="description" content="Auto Fury LLC – Ship your vehicle in 4 easy steps." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ship your vehicle with Auto Fury LLC.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap 5 CSS (CDN) -->
-  <link
+  <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
-  />
+  >
 </head>
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Auto Fury LLC</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNavbar">
@@ -42,70 +34,98 @@
   </div>
 </nav>
 
-<!-- HERO / JUMBOTRON STYLE SECTION -->
+<!-- HERO SECTION -->
 <section class="bg-light p-5 text-center">
   <div class="container">
-    <h1 class="display-4 fw-bold">Ship Your Vehicle in 4 Simple Steps</h1>
-    <p class="lead">Open or Enclosed, Exotic or Everyday – We Make Shipping Easy.</p>
+    <h1 class="display-4 fw-bold">Ship Your Vehicle with Auto Fury LLC</h1>
+    <p class="lead">Exotic or Everyday – We Make It Easy.</p>
     <a href="contact.html" class="btn btn-warning btn-lg mt-3">Get a FREE Quote</a>
   </div>
 </section>
 
 <!-- MAIN CONTENT -->
 <div class="container my-5">
-  <div class="row g-4">
-    <!-- Card 1 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100 border-0 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Step 1</h5>
-          <p class="card-text">
-            Provide your vehicle details and pickup/delivery info online.
+
+  <!-- EXAMPLE BOOTSTRAP CAROUSEL FOR GOOGLE REVIEWS -->
+  <h2 class="mb-4 text-center">Our Google Reviews</h2>
+  <div id="googleReviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex flex-column align-items-center text-center mx-auto" style="max-width: 700px;">
+          <h5 class="fw-semibold mb-3">Jane D.</h5>
+          <!-- Example star rating -->
+          <p class="mb-1 text-warning">
+            &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5 stars -->
           </p>
+          <p class="px-3">
+            “Auto Fury LLC shipped my Ferrari across the country. 
+            Arrived on time, pristine condition. Great communication!”
+          </p>
+          <small class="text-muted">via Google Reviews</small>
         </div>
       </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100 border-0 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Step 2</h5>
-          <p class="card-text">
-            Receive a custom quote in under 24 hours. Zero hidden fees.
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column align-items-center text-center mx-auto" style="max-width: 700px;">
+          <h5 class="fw-semibold mb-3">Mark W.</h5>
+          <p class="mb-1 text-warning">
+            &#9733; &#9733; &#9733; &#9733; &#9734; <!-- 4 stars -->
           </p>
+          <p class="px-3">
+            “Had them transport my Lamborghini Huracán. Driver was very 
+            professional, gave constant updates. Highly recommend!”
+          </p>
+          <small class="text-muted">via Google Reviews</small>
         </div>
       </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100 border-0 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Step 3</h5>
-          <p class="card-text">
-            Lock in your shipping date with a small deposit. We’ll handle the rest.
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column align-items-center text-center mx-auto" style="max-width: 700px;">
+          <h5 class="fw-semibold mb-3">Sarah P.</h5>
+          <p class="mb-1 text-warning">
+            &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5 stars -->
           </p>
+          <p class="px-3">
+            “Never thought shipping my antique Porsche would be this easy. 
+            No damage, no delays, super nice staff. Thank you Auto Fury!”
+          </p>
+          <small class="text-muted">via Google Reviews</small>
         </div>
       </div>
+
+      <!-- Add more slides for additional reviews as needed -->
+
     </div>
-    <!-- Card 4 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100 border-0 shadow">
-        <div class="card-body">
-          <h5 class="card-title">Step 4</h5>
-          <p class="card-text">
-            Your vehicle is inspected, loaded, and safely delivered to its destination.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div><!-- end row -->
-</div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#googleReviewsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#googleReviewsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div> <!-- end .container -->
 
 <!-- FOOTER -->
 <footer class="bg-dark text-white text-center py-3 mt-5">
   <small>
-    &copy; 2025 Auto Fury LLC – All rights reserved. 
-    &middot; <a href="https://www.instagram.com/autofuryllc/" target="_blank" rel="noopener" class="text-decoration-none text-warning">Instagram</a>
+    &copy; 2025 Auto Fury LLC – All rights reserved.
+    &middot; <a 
+      href="https://www.instagram.com/autofuryllc/" 
+      target="_blank"
+      rel="noopener"
+      class="text-decoration-none text-warning"
+    >
+      Instagram
+    </a>
   </small>
 </footer>
 
