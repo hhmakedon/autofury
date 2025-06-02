@@ -10,7 +10,7 @@ body {
 
 /* Make sure all headers and structural elements are white */
 h2, h3, h4, h5, h6,
-p, small, span, th, label, input, textarea, select {
+p, small, span, th, label, select {
   color: rgb(255, 255, 255) !important;
 }
 
