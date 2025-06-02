@@ -1,50 +1,72 @@
+/* Ensure body and html fill full viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Set full background image */
 body {
-  background-image: url('images/NewPictures/BG.png');
+  background: url('images/NewPictures/BG.png') no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  min-height: 200vh;
   color: white;
+  font-family: Arial, sans-serif;
 }
 
-/* Make sure all headers and structural elements are white */
-h2, h3, h4, h5, h6,
-p, small, span, th, label, input, textarea, select {
-  color: rgb(255, 255, 255) !important;
+/* Optional dark overlay for contrast */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: -1;
 }
 
-h1{
+/* Force all text elements to white */
+h1, h2, h3, h4, h5, h6,
+p, span, small, li, label, td, th,
+input, textarea, select, button {
+  color: white !important;
+}
+
+/* Optional: red for main headers */
+h1 {
   color: rgb(255, 0, 0) !important;
 }
 
-
-
-/* Optional: white placeholder text */
+/* Placeholder text color */
 ::placeholder {
   color: white;
   opacity: 0.8;
 }
 
-/* Optional: white links */
+/* Links */
 a {
   color: white;
   text-decoration: underline;
 }
-
 a:hover {
-  color: #ffc107; /* yellow on hover for contrast */
+  color: #ffc107; /* gold/yellow on hover */
 }
 
-/* Optional: make tables and forms readable */
-.table, .form-control {
+/* Table and form styling */
+.table,
+.form-control {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
   border-color: white;
 }
 
-/* Optional: override Bootstrap light backgrounds */
+/* Adjust Bootstrap's bg-light to be transparent */
 .bg-light {
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: white !important;
+}
+
+/* Optional: make footer stand out less */
+footer {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
