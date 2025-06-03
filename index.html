@@ -36,6 +36,11 @@
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item">
+  <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
+    Request a Quote
+  </a>
+</li>
       </ul>
     </div>
   </divhttp://127.0.0.1:3000/images/5.JPG>
@@ -53,7 +58,7 @@
   >
     <h1 class="display-4 fw-bold">Ship Your Vehicle with Auto Fury LLC</h1>
     <p class="lead">Exotic or Everyday – We Make It Easy.</p>
-    <a href="contact.html" class="btn btn-warning btn-lg mt-3">Get a FREE Quote</a>
+    <a href="get-a-quote.html" class="btn btn-warning btn-lg mt-3">Get a FREE Quote</a>
   </div>
 </section>
 
@@ -212,6 +217,54 @@
     </a>
   </small>
 </footer>
+
+<div class="modal fade popup-modal" id="popup-modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <strong>We Ship Across the USA</strong><br>
+          <strong>Shipping Your Vehicle in 4 Steps:</strong>
+          <ol>
+            <li>Provide Us Your Information</li>
+            <li>Receive a Free Quote Via Email in 24 Hours</li>
+            <li>Accept Quote, Pay & Establish Shipping Details</li>
+            <li>All Set! Prepare Your Vehicle.</li>
+          </ol>
+          <div>
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:8477730062" class="text-decoration-none">(847) 773-0062</a>
+          </div><hr>
+        </div>
+        <div class="col-md-6">
+          <p class="text-muted">Fill out the form below to get started:</p>
+          <!-- Embed your form here or use a simplified one: -->
+          <form action="https://formsubmit.co/quotes@autofuryllc.com" method="POST">
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Pickup Zip Code" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Delivery Zip Code" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" required>
+                <option value="">Select Transport Type</option>
+                <option value="Enclosed">Enclosed Transport</option>
+                <option value="Open">Open Transport</option>
+                <option value="Unsure">I'm Unsure</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <!-- Bootstrap JS (CDN) -->
