@@ -85,37 +85,36 @@
         <div class="col-md-6">
           <p class="text-muted">Fill out the form below to get started:</p>
           <!-- Embed your form here or use a simplified one: -->
-<form action="https://formsubmit.co/quotes@autofuryllc.com" method="POST">
-          <!-- FormSubmit hidden settings -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New quote request from modal popup">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://www.autofuryllc.com/thank-you.html">
+<form name="modal-quote-form" action="https://formsubmit.co/quotes@autofuryllc.com" method="POST" autocomplete="off">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New quote request from modal popup">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://www.autofuryllc.com/thank-you.html">
 
+  <div class="mb-3">
+    <input type="email" name="email" class="form-control" placeholder="Email" required>
+  </div>
 
-          <div class="mb-3">
-            <input type="email" name="email" class="form-control" placeholder="Email" required>
-          </div>
+  <div class="mb-3">
+    <input type="text" name="pickup_zip" class="form-control" placeholder="Pickup Zip Code" required>
+  </div>
 
-          <div class="mb-3">
-            <input type="text" name="pickup_zip" class="form-control" placeholder="Pickup Zip Code" required>
-          </div>
+  <div class="mb-3">
+    <input type="text" name="delivery_zip" class="form-control" placeholder="Delivery Zip Code" required>
+  </div>
 
-          <div class="mb-3">
-            <input type="text" name="delivery_zip" class="form-control" placeholder="Delivery Zip Code" required>
-          </div>
+  <div class="mb-3">
+    <select name="transport_type" class="form-select" required>
+      <option value="">Select Transport Type</option>
+      <option value="Enclosed">Enclosed Transport</option>
+      <option value="Open">Open Transport</option>
+      <option value="Unsure">I'm Unsure</option>
+    </select>
+  </div>
 
-          <div class="mb-3 dark-text">
-            <select name="transport_type" class="form-select" required>
-              <option value="">Select Transport Type</option>
-              <option value="Enclosed">Enclosed Transport</option>
-              <option value="Open">Open Transport</option>
-              <option value="Unsure">I'm Unsure</option>
-            </select>
-          </div>
+  <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
+</form>
 
-          <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
-          </form>
         </div>
       </div>
     </div>
