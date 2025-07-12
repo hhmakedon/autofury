@@ -72,6 +72,30 @@
           <label for="email" class="form-label fw-semibold">Email</label>
           <input type="email" class="form-control" name="email" id="email" placeholder="janedoe@example.com" required />
         </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label fw-semibold">Phone</label>
+    <input type="tel"
+           name="phone"
+           class="form-control"
+           placeholder="Phone Number"
+           pattern="[\d\s\-]{10,15}">
+  </div>
+  <div class="mb-3">
+    <label for="pickup_zip" class="form-label fw-semibold">Pickup Zip</label>
+    <input type="text"
+           name="pickup_zip"
+           class="form-control"
+           placeholder="Pickup Zip Code">
+  </div>
+
+  <!-- 4. Delivery ZIP (required) -->
+  <div class="mb-3">
+    <label for="delivery_zip" class="form-label fw-semibold">Delivery Zip</label>
+    <input type="text"
+           name="delivery_zip"
+           class="form-control"
+           placeholder="Delivery Zip Code">
+  </div>
         <div class="mb-3">
           <label for="message" class="form-label fw-semibold">Message</label>
           <textarea class="form-control" name="message" id="message" rows="5" placeholder="How can we assist you?" required></textarea>
