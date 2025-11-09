@@ -6,19 +6,29 @@
   <meta name="description" content="Check out photos of Auto Fury LLC transport trucks and exotic vehicles we've shipped." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Bootstrap 5 CSS -->
+  <!-- Site CSS + Favicon -->
   <link rel="stylesheet" href="style.css" />
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Vendor CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
   <style>
+    /* Lightbox image sizing */
     .glightbox-container .gslide-image img {
       max-height: 800px;
       width: auto;
       object-fit: contain;
+    }
+    /* Grid images */
+    .gallery-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: .5rem;
+      display: block;
     }
   </style>
 </head>
@@ -33,20 +43,20 @@
     </button>
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
         <li class="nav-item"><a class="nav-link" href="why-choose.html">Why Choose Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         <li class="nav-item">
-  <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
-    Request a Quote
-  </a>
-</li>
+          <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
+            Request a Quote
+          </a>
+        </li>
       </ul>
     </div>
-  </divhttp://127.0.0.1:3000/images/5.JPG>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -59,431 +69,101 @@
 
 <!-- GALLERY -->
 <div class="container my-5">
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-    <!-- 1-->
-<div class="col">
-      <a href="images/11.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/11.JPG" class="card-img-top" alt="Exotic Car 1" height="300">
-      </a>
-</div>
-<div class="col">
-      <a href="images/42.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/42.JPG" class="card-img-top" alt="Exotic Car 1" height="300">
-      </a>
-</div>
-<div class="col">
-      <a href="images/43.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/43.JPG" class="card-img-top" alt="Exotic Car 1" height="300">
-      </a>
-</div>
- <!-- 2-->
-<div class="col">
-      <a href="images/14.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/14.JPG" class="card-img-top" alt="Exotic Car 2" height="300">
-      </a>
-</div>
- <!-- 3-->
-<div class="col">
-      <a href="images/20.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/20.JPG" class="card-img-top" alt="Exotic Car 3" height="300">
-      </a>
-</div>
+    <!-- Originals -->
+    <div class="col"><a href="images/11.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/11.JPG" class="gallery-img" alt="Gallery 11"></a></div>
+    <div class="col"><a href="images/42.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/42.JPG" class="gallery-img" alt="Gallery 42"></a></div>
+    <div class="col"><a href="images/43.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/43.JPG" class="gallery-img" alt="Gallery 43"></a></div>
+    <div class="col"><a href="images/14.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/14.JPG" class="gallery-img" alt="Gallery 14"></a></div>
+    <div class="col"><a href="images/20.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/20.JPG" class="gallery-img" alt="Gallery 20"></a></div>
+    <div class="col"><a href="images/37.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/37.JPG" class="gallery-img" alt="Gallery 37"></a></div>
+    <div class="col"><a href="images/5.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/5.JPG" class="gallery-img" alt="Gallery 5"></a></div>
+    <div class="col"><a href="images/15.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/15.JPG" class="gallery-img" alt="Gallery 15"></a></div>
+    <div class="col"><a href="images/44.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/44.JPG" class="gallery-img" alt="Gallery 44"></a></div>
+    <div class="col"><a href="images/8.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/8.JPG" class="gallery-img" alt="Gallery 8"></a></div>
+    <div class="col"><a href="images/9.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/9.JPG" class="gallery-img" alt="Gallery 9"></a></div>
+    <div class="col"><a href="images/12.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/12.JPG" class="gallery-img" alt="Gallery 12"></a></div>
+    <div class="col"><a href="images/18.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/18.JPG" class="gallery-img" alt="Gallery 18"></a></div>
+    <div class="col"><a href="images/3.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/3.JPG" class="gallery-img" alt="Gallery 3"></a></div>
+    <div class="col"><a href="images/26.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/26.JPG" class="gallery-img" alt="Gallery 26"></a></div>
+    <div class="col"><a href="images/30.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/30.JPG" class="gallery-img" alt="Gallery 30"></a></div>
 
- <!-- 4-->
-<div class="col">
-      <a href="images/37.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/37.JPG" class="card-img-top" alt="Exotic Car 4" height="300">
-      </a>
-</div>
- <!-- 5-->
-<div class="col">
-      <a href="images/5.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/5.JPG" class="card-img-top" alt="Exotic Car 5" height="300">
-      </a>
-</div>
+    <!-- NewPictures n3 - n20 -->
+    <div class="col"><a href="images/NewPictures/n3.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n3.JPG" class="gallery-img" alt="Gallery n3"></a></div>
+    <div class="col"><a href="images/NewPictures/n4.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n4.JPG" class="gallery-img" alt="Gallery n4"></a></div>
+    <div class="col"><a href="images/NewPictures/n5.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n5.JPG" class="gallery-img" alt="Gallery n5"></a></div>
+    <div class="col"><a href="images/NewPictures/n6.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n6.JPG" class="gallery-img" alt="Gallery n6"></a></div>
+    <div class="col"><a href="images/NewPictures/n7.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n7.JPG" class="gallery-img" alt="Gallery n7"></a></div>
+    <div class="col"><a href="images/NewPictures/n8.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n8.JPG" class="gallery-img" alt="Gallery n8"></a></div>
+    <div class="col"><a href="images/NewPictures/n9.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n9.JPG" class="gallery-img" alt="Gallery n9"></a></div>
+    <div class="col"><a href="images/NewPictures/n10.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n10.JPG" class="gallery-img" alt="Gallery n10"></a></div>
+    <div class="col"><a href="images/NewPictures/n11.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n11.JPG" class="gallery-img" alt="Gallery n11"></a></div>
+    <div class="col"><a href="images/NewPictures/n12.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n12.JPG" class="gallery-img" alt="Gallery n12"></a></div>
+    <div class="col"><a href="images/NewPictures/n13.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n13.JPG" class="gallery-img" alt="Gallery n13"></a></div>
+    <div class="col"><a href="images/NewPictures/n14.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n14.JPG" class="gallery-img" alt="Gallery n14"></a></div>
+    <div class="col"><a href="images/NewPictures/n15.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n15.JPG" class="gallery-img" alt="Gallery n15"></a></div>
+    <div class="col"><a href="images/NewPictures/n16.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n16.JPG" class="gallery-img" alt="Gallery n16"></a></div>
+    <div class="col"><a href="images/NewPictures/n17.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n17.JPG" class="gallery-img" alt="Gallery n17"></a></div>
+    <div class="col"><a href="images/NewPictures/n18.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n18.JPG" class="gallery-img" alt="Gallery n18"></a></div>
+    <div class="col"><a href="images/NewPictures/n19.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n19.JPG" class="gallery-img" alt="Gallery n19"></a></div>
+    <div class="col"><a href="images/NewPictures/n20.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n20.JPG" class="gallery-img" alt="Gallery n20"></a></div>
 
-<div class="col">
-      <a href="images/15.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/15.JPG" class="card-img-top" alt="Exotic Car 6" height="300">
-      </a>
-</div>
-<div class="col">
-      <a href="images/44.JPG" class="glightbox" data-gallery="gallery1">
-        <img src="images/44.JPG" class="card-img-top" alt="Exotic Car 6" height="300">
-      </a>
-</div>
+    <!-- NewPictures n22, n23, n24, n25, n26, n27, n28, n29, n31 -->
+    <div class="col"><a href="images/NewPictures/n22.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n22.JPG" class="gallery-img" alt="Gallery n22"></a></div>
+    <div class="col"><a href="images/NewPictures/n23.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n23.JPG" class="gallery-img" alt="Gallery n23"></a></div>
+    <div class="col"><a href="images/NewPictures/n24.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n24.JPG" class="gallery-img" alt="Gallery n24"></a></div>
+    <div class="col"><a href="images/NewPictures/n25.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n25.JPG" class="gallery-img" alt="Gallery n25"></a></div>
+    <div class="col"><a href="images/NewPictures/n26.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n26.JPG" class="gallery-img" alt="Gallery n26"></a></div>
+    <div class="col"><a href="images/NewPictures/n27.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n27.JPG" class="gallery-img" alt="Gallery n27"></a></div>
+    <div class="col"><a href="images/NewPictures/n28.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n28.JPG" class="gallery-img" alt="Gallery n28"></a></div>
+    <div class="col"><a href="images/NewPictures/n29.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n29.JPG" class="gallery-img" alt="Gallery n29"></a></div>
+    <div class="col"><a href="images/NewPictures/n31.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/n31.JPG" class="gallery-img" alt="Gallery n31"></a></div>
 
-<div class="col">
-  <a href="images/8.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/8.JPG" class="card-img-top" alt="Exotic Car" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/9.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/9.JPG" class="card-img-top" alt="Exotic Car" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/12.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/12.JPG" class="card-img-top" alt="Exotic Car" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/18.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/18.JPG" class="card-img-top" alt="Exotic Car" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/3.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/3.JPG" class="card-img-top" alt="Exotic Car" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/26.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/26.JPG" class="card-img-top" alt="Exotic Car" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/30.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/30.JPG" class="card-img-top" alt="Exotic Car" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n3.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n3.JPG" class="card-img-top" alt="Exotic Car n3" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n4.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n4.JPG" class="card-img-top" alt="Exotic Car n4" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n5.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n5.JPG" class="card-img-top" alt="Exotic Car n5" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n6.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n6.JPG" class="card-img-top" alt="Exotic Car n6" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n7.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n7.JPG" class="card-img-top" alt="Exotic Car n7" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n8.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n8.JPG" class="card-img-top" alt="Exotic Car n8" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n9.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n9.JPG" class="card-img-top" alt="Exotic Car n9" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n10.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n10.JPG" class="card-img-top" alt="Exotic Car n10" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n11.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n11.JPG" class="card-img-top" alt="Exotic Car n11" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n12.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n12.JPG" class="card-img-top" alt="Exotic Car n12" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n13.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n13.JPG" class="card-img-top" alt="Exotic Car n13" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n14.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n14.JPG" class="card-img-top" alt="Exotic Car n14" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n15.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n15.JPG" class="card-img-top" alt="Exotic Car n15" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n16.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n16.JPG" class="card-img-top" alt="Exotic Car n16" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n17.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n17.JPG" class="card-img-top" alt="Exotic Car n17" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n18.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n18.JPG" class="card-img-top" alt="Exotic Car n18" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n19.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n19.JPG" class="card-img-top" alt="Exotic Car n19" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n20.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n20.JPG" class="card-img-top" alt="Exotic Car n20" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n22.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n22.JPG" class="card-img-top" alt="Exotic Car n22" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n23.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n23.JPG" class="card-img-top" alt="Exotic Car n23" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n24.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n24.JPG" class="card-img-top" alt="Exotic Car n24" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n25.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n25.JPG" class="card-img-top" alt="Exotic Car n25" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n26.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n26.JPG" class="card-img-top" alt="Exotic Car n26" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n27.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n27.JPG" class="card-img-top" alt="Exotic Car n27" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n28.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n28.JPG" class="card-img-top" alt="Exotic Car n28" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n29.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n29.JPG" class="card-img-top" alt="Exotic Car n29" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/n31.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/n31.JPG" class="card-img-top" alt="Exotic Car n29" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/m1.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/m1.JPG" class="card-img-top" alt="Exotic Car m1" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/m2.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/m2.JPG" class="card-img-top" alt="Exotic Car m2" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/m3.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/m3.JPG" class="card-img-top" alt="Exotic Car m3" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/m4.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/m4.JPG" class="card-img-top" alt="Exotic Car m4" height="300">
-  </a>
-</div>
+    <!-- NewPictures m1 - m4 -->
+    <div class="col"><a href="images/NewPictures/m1.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/m1.JPG" class="gallery-img" alt="Gallery m1"></a></div>
+    <div class="col"><a href="images/NewPictures/m2.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/m2.JPG" class="gallery-img" alt="Gallery m2"></a></div>
+    <div class="col"><a href="images/NewPictures/m3.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/m3.JPG" class="gallery-img" alt="Gallery m3"></a></div>
+    <div class="col"><a href="images/NewPictures/m4.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/m4.JPG" class="gallery-img" alt="Gallery m4"></a></div>
 
-<!-- ADDED p1.JPG - p35.JPG -->
-<div class="col">
-  <a href="images/NewPictures/p1.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p1.JPG" class="card-img-top" alt="Exotic Car p1" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p2.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p2.JPG" class="card-img-top" alt="Exotic Car p2" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p3.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p3.JPG" class="card-img-top" alt="Exotic Car p3" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p4.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p4.JPG" class="card-img-top" alt="Exotic Car p4" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p5.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p5.JPG" class="card-img-top" alt="Exotic Car p5" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p6.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p6.JPG" class="card-img-top" alt="Exotic Car p6" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p7.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p7.JPG" class="card-img-top" alt="Exotic Car p7" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p8.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p8.JPG" class="card-img-top" alt="Exotic Car p8" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p9.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p9.JPG" class="card-img-top" alt="Exotic Car p9" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p10.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p10.JPG" class="card-img-top" alt="Exotic Car p10" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p11.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p11.JPG" class="card-img-top" alt="Exotic Car p11" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p12.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p12.JPG" class="card-img-top" alt="Exotic Car p12" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p13.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p13.JPG" class="card-img-top" alt="Exotic Car p13" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p14.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p14.JPG" class="card-img-top" alt="Exotic Car p14" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p15.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p15.JPG" class="card-img-top" alt="Exotic Car p15" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p16.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p16.JPG" class="card-img-top" alt="Exotic Car p16" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p17.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p17.JPG" class="card-img-top" alt="Exotic Car p17" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p18.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p18.JPG" class="card-img-top" alt="Exotic Car p18" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p19.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p19.JPG" class="card-img-top" alt="Exotic Car p19" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p20.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p20.JPG" class="card-img-top" alt="Exotic Car p20" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p21.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p21.JPG" class="card-img-top" alt="Exotic Car p21" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p22.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p22.JPG" class="card-img-top" alt="Exotic Car p22" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p23.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p23.JPG" class="card-img-top" alt="Exotic Car p23" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p24.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p24.JPG" class="card-img-top" alt="Exotic Car p24" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p25.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p25.JPG" class="card-img-top" alt="Exotic Car p25" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p26.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p26.JPG" class="card-img-top" alt="Exotic Car p26" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p27.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p27.JPG" class="card-img-top" alt="Exotic Car p27" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p28.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p28.JPG" class="card-img-top" alt="Exotic Car p28" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p29.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p29.JPG" class="card-img-top" alt="Exotic Car p29" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p30.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p30.JPG" class="card-img-top" alt="Exotic Car p30" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p31.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p31.JPG" class="card-img-top" alt="Exotic Car p31" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p32.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p32.JPG" class="card-img-top" alt="Exotic Car p32" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p33.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p33.JPG" class="card-img-top" alt="Exotic Car p33" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p34.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p34.JPG" class="card-img-top" alt="Exotic Car p34" height="300">
-  </a>
-</div>
-<div class="col">
-  <a href="images/NewPictures/p35.JPG" class="glightbox" data-gallery="gallery1">
-    <img src="images/NewPictures/p35.JPG" class="card-img-top" alt="Exotic Car p35" height="300">
-  </a>
-</div>
-<!-- END ADDED -->
+    <!-- NewPictures p1 - p35 -->
+    <div class="col"><a href="images/NewPictures/p1.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p1.JPG" class="gallery-img" alt="Gallery p1"></a></div>
+    <div class="col"><a href="images/NewPictures/p2.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p2.JPG" class="gallery-img" alt="Gallery p2"></a></div>
+    <div class="col"><a href="images/NewPictures/p3.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p3.JPG" class="gallery-img" alt="Gallery p3"></a></div>
+    <div class="col"><a href="images/NewPictures/p4.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p4.JPG" class="gallery-img" alt="Gallery p4"></a></div>
+    <div class="col"><a href="images/NewPictures/p5.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p5.JPG" class="gallery-img" alt="Gallery p5"></a></div>
+    <div class="col"><a href="images/NewPictures/p6.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p6.JPG" class="gallery-img" alt="Gallery p6"></a></div>
+    <div class="col"><a href="images/NewPictures/p7.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p7.JPG" class="gallery-img" alt="Gallery p7"></a></div>
+    <div class="col"><a href="images/NewPictures/p8.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p8.JPG" class="gallery-img" alt="Gallery p8"></a></div>
+    <div class="col"><a href="images/NewPictures/p9.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p9.JPG" class="gallery-img" alt="Gallery p9"></a></div>
+    <div class="col"><a href="images/NewPictures/p10.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p10.JPG" class="gallery-img" alt="Gallery p10"></a></div>
+    <div class="col"><a href="images/NewPictures/p11.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p11.JPG" class="gallery-img" alt="Gallery p11"></a></div>
+    <div class="col"><a href="images/NewPictures/p12.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p12.JPG" class="gallery-img" alt="Gallery p12"></a></div>
+    <div class="col"><a href="images/NewPictures/p13.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p13.JPG" class="gallery-img" alt="Gallery p13"></a></div>
+    <div class="col"><a href="images/NewPictures/p14.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p14.JPG" class="gallery-img" alt="Gallery p14"></a></div>
+    <div class="col"><a href="images/NewPictures/p15.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p15.JPG" class="gallery-img" alt="Gallery p15"></a></div>
+    <div class="col"><a href="images/NewPictures/p16.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p16.JPG" class="gallery-img" alt="Gallery p16"></a></div>
+    <div class="col"><a href="images/NewPictures/p17.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p17.JPG" class="gallery-img" alt="Gallery p17"></a></div>
+    <div class="col"><a href="images/NewPictures/p18.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p18.JPG" class="gallery-img" alt="Gallery p18"></a></div>
+    <div class="col"><a href="images/NewPictures/p19.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p19.JPG" class="gallery-img" alt="Gallery p19"></a></div>
+    <div class="col"><a href="images/NewPictures/p20.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p20.JPG" class="gallery-img" alt="Gallery p20"></a></div>
+    <div class="col"><a href="images/NewPictures/p21.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p21.JPG" class="gallery-img" alt="Gallery p21"></a></div>
+    <div class="col"><a href="images/NewPictures/p22.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p22.JPG" class="gallery-img" alt="Gallery p22"></a></div>
+    <div class="col"><a href="images/NewPictures/p23.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p23.JPG" class="gallery-img" alt="Gallery p23"></a></div>
+    <div class="col"><a href="images/NewPictures/p24.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p24.JPG" class="gallery-img" alt="Gallery p24"></a></div>
+    <div class="col"><a href="images/NewPictures/p25.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p25.JPG" class="gallery-img" alt="Gallery p25"></a></div>
+    <div class="col"><a href="images/NewPictures/p26.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p26.JPG" class="gallery-img" alt="Gallery p26"></a></div>
+    <div class="col"><a href="images/NewPictures/p27.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p27.JPG" class="gallery-img" alt="Gallery p27"></a></div>
+    <div class="col"><a href="images/NewPictures/p28.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p28.JPG" class="gallery-img" alt="Gallery p28"></a></div>
+    <div class="col"><a href="images/NewPictures/p29.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p29.JPG" class="gallery-img" alt="Gallery p29"></a></div>
+    <div class="col"><a href="images/NewPictures/p30.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p30.JPG" class="gallery-img" alt="Gallery p30"></a></div>
+    <div class="col"><a href="images/NewPictures/p31.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p31.JPG" class="gallery-img" alt="Gallery p31"></a></div>
+    <div class="col"><a href="images/NewPictures/p32.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p32.JPG" class="gallery-img" alt="Gallery p32"></a></div>
+    <div class="col"><a href="images/NewPictures/p33.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p33.JPG" class="gallery-img" alt="Gallery p33"></a></div>
+    <div class="col"><a href="images/NewPictures/p34.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p34.JPG" class="gallery-img" alt="Gallery p34"></a></div>
+    <div class="col"><a href="images/NewPictures/p35.JPG" class="glightbox" data-gallery="gallery1"><img loading="lazy" src="images/NewPictures/p35.JPG" class="gallery-img" alt="Gallery p35"></a></div>
 
-</div>
+  </div>
 </div>
 
 <!-- FOOTER -->
@@ -496,6 +176,7 @@
   </small>
 </footer>
 
+<!-- QUOTE MODAL -->
 <div class="modal fade popup-modal" id="popup-modal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content p-4">
@@ -516,82 +197,53 @@
         </div>
         <div class="col-md-6">
           <p class="text-muted">Fill out the form below to get started:</p>
-          <!-- Embed your form here or use a simplified one: -->
           <form name="modal-quote-form"
-      action="https://formsubmit.co/quotes@autofuryllc.com"
-      method="POST"
-      autocomplete="off">
+                action="https://formsubmit.co/quotes@autofuryllc.com"
+                method="POST"
+                autocomplete="off">
+            <input type="hidden" name="_captcha"  value="false">
+            <input type="hidden" name="_subject"  value="New quote request from modal popup">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
 
-  <!-- FormSubmit hidden settings -->
-  <input type="hidden" name="_captcha"  value="false">
-  <input type="hidden" name="_subject"  value="New quote request from modal popup">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
 
-  <!-- 1. Email (required) -->
-  <div class="mb-3">
-    <input type="email"
-           name="email"
-           class="form-control"
-           placeholder="Email"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="tel" name="phone" class="form-control" placeholder="Phone Number" pattern="[\d\s\-()]{10,20}" required>
+            </div>
 
-  <!-- 2. Phone (required) -->
-  <div class="mb-3">
-    <input type="tel"
-           name="phone"
-           class="form-control"
-           placeholder="Phone Number"
-           pattern="[\d\s\-]{10,15}"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="text" name="pickup_zip" class="form-control" placeholder="Pickup Zip Code" required>
+            </div>
 
-  <!-- 3. Pickup ZIP (required) -->
-  <div class="mb-3">
-    <input type="text"
-           name="pickup_zip"
-           class="form-control"
-           placeholder="Pickup Zip Code"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="text" name="delivery_zip" class="form-control" placeholder="Delivery Zip Code" required>
+            </div>
 
-  <!-- 4. Delivery ZIP (required) -->
-  <div class="mb-3">
-    <input type="text"
-           name="delivery_zip"
-           class="form-control"
-           placeholder="Delivery Zip Code"
-           required>
-  </div>
+            <div class="mb-3">
+              <select name="transport_type" class="form-select" required>
+                <option value="">Select Transport Type</option>
+                <option value="Enclosed">Enclosed Transport</option>
+                <option value="Open">Open Transport</option>
+                <option value="Unsure">I'm Unsure</option>
+              </select>
+            </div>
 
-  <!-- 5. Transport type (required) -->
-  <div class="mb-3">
-    <select name="transport_type"
-            class="form-select"
-            required>
-      <option value="">Select Transport Type</option>
-      <option value="Enclosed">Enclosed Transport</option>
-      <option value="Open">Open Transport</option>
-      <option value="Unsure">I'm Unsure</option>
-    </select>
-  </div>
-
-  <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
-</form>
-
-
+            <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- JS Libraries -->
+<!-- Vendor JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
-  const lightbox = GLightbox({
+  GLightbox({
     selector: '.glightbox',
     openEffect: 'zoom',
     closeEffect: 'fade',

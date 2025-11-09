@@ -24,20 +24,20 @@
     </button>
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
         <li class="nav-item"><a class="nav-link" href="why-choose.html">Why Choose Us</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         <li class="nav-item">
-  <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
-    Request a Quote
-  </a>
-</li>
+          <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
+            Request a Quote
+          </a>
+        </li>
       </ul>
     </div>
-  </divhttp://127.0.0.1:3000/images/5.JPG>
+  </div>
 </nav>
 
 <!-- HERO SECTION -->
@@ -55,50 +55,57 @@
       <h2 class="mb-4">Get in Touch</h2>
       <p class="mb-4">
         Have questions or need a quote? Fill out the form below, or call us at 
-        <strong>(847)773-0062</strong>. We’ll respond as quickly as possible.
+        <strong>(847) 773-0062</strong>. We’ll respond as quickly as possible.
       </p>
 
-      <form action="https://formsubmit.co/quotes@autofuryllc.com" method="POST">
-        <!-- Formsubmit config -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New message from Auto Fury LLC site">
+      <form
+        data-formsubmit
+        method="POST"
+        data-action-rev="moc.cllyrufotua@setouq/oc.timbusmrof//:sptth"
+        autocomplete="off"
+        novalidate
+      >
+        <input type="hidden" name="_subject"  value="New message from Auto Fury LLC site">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://www.autofuryllc.com/thank-you.html">
+        <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
+        <input type="hidden" name="_captcha"  value="true">
+
+        <!-- Honeypot -->
+        <div class="hp-wrap">
+          <label>Leave this field empty</label>
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+        </div>
+
         <div class="mb-3">
           <label for="name" class="form-label fw-semibold">Name</label>
           <input type="text" class="form-control" name="name" id="name" placeholder="Jane Doe" required />
         </div>
+
         <div class="mb-3">
           <label for="email" class="form-label fw-semibold">Email</label>
           <input type="email" class="form-control" name="email" id="email" placeholder="janedoe@example.com" required />
         </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label fw-semibold">Phone</label>
-    <input type="tel"
-           name="phone"
-           class="form-control"
-           placeholder="Phone Number">
-  </div>
-  <div class="mb-3">
-    <label for="pickup_zip" class="form-label fw-semibold">Pickup Zip</label>
-    <input type="text"
-           name="pickup_zip"
-           class="form-control"
-           placeholder="Pickup Zip Code">
-  </div>
 
-  <!-- 4. Delivery ZIP (required) -->
-  <div class="mb-3">
-    <label for="delivery_zip" class="form-label fw-semibold">Delivery Zip</label>
-    <input type="text"
-           name="delivery_zip"
-           class="form-control"
-           placeholder="Delivery Zip Code">
-  </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label fw-semibold">Phone</label>
+          <input type="tel" name="phone" id="phone" class="form-control" placeholder="(555) 555-5555" required pattern="^[+()\\d\\s-]{10,20}$">
+        </div>
+
+        <div class="mb-3">
+          <label for="pickup_zip" class="form-label fw-semibold">Pickup Zip</label>
+          <input type="text" name="pickup_zip" id="pickup_zip" class="form-control" placeholder="12345 or 12345-6789" required pattern="^\\d{5}(-\\d{4})?$">
+        </div>
+
+        <div class="mb-3">
+          <label for="delivery_zip" class="form-label fw-semibold">Delivery Zip</label>
+          <input type="text" name="delivery_zip" id="delivery_zip" class="form-control" placeholder="12345 or 12345-6789" required pattern="^\\d{5}(-\\d{4})?$">
+        </div>
+
         <div class="mb-3">
           <label for="message" class="form-label fw-semibold">Message</label>
-          <textarea class="form-control" name="message" id="message" rows="5" placeholder="How can we assist you?" required></textarea>
+          <textarea class="form-control" name="message" id="message" rows="5" placeholder="How can we assist you?" minlength="15" required></textarea>
         </div>
+
         <button type="submit" class="btn btn-primary px-4">Send Message</button>
       </form>
 
@@ -117,6 +124,7 @@
   </small>
 </footer>
 
+<!-- QUOTE MODAL (hardened form) -->
 <div class="modal fade popup-modal" id="popup-modal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content p-4">
@@ -137,71 +145,52 @@
         </div>
         <div class="col-md-6">
           <p class="text-muted">Fill out the form below to get started:</p>
-          <!-- Embed your form here or use a simplified one: -->
-          <form name="modal-quote-form"
-      action="https://formsubmit.co/quotes@autofuryllc.com"
-      method="POST"
-      autocomplete="off">
 
-  <!-- FormSubmit hidden settings -->
-  <input type="hidden" name="_captcha"  value="false">
-  <input type="hidden" name="_subject"  value="New quote request from modal popup">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
+          <form
+            data-formsubmit
+            method="POST"
+            data-action-rev="moc.cllyrufotua@setouq/oc.timbusmrof//:sptth"
+            autocomplete="off"
+            novalidate
+          >
+            <input type="hidden" name="_subject"  value="New quote request from modal popup">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
+            <input type="hidden" name="_captcha"  value="true">
 
-  <!-- 1. Email (required) -->
-  <div class="mb-3">
-    <input type="email"
-           name="email"
-           class="form-control"
-           placeholder="Email"
-           required>
-  </div>
+            <!-- Honeypot -->
+            <div class="hp-wrap">
+              <label>Leave this field empty</label>
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+            </div>
 
-  <!-- 2. Phone (required) -->
-  <div class="mb-3">
-    <input type="tel"
-           name="phone"
-           class="form-control"
-           placeholder="Phone Number"
-           pattern="[\d\s\-]{10,15}"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
 
-  <!-- 3. Pickup ZIP (required) -->
-  <div class="mb-3">
-    <input type="text"
-           name="pickup_zip"
-           class="form-control"
-           placeholder="Pickup Zip Code"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required pattern="^[+()\\d\\s-]{10,20}$">
+            </div>
 
-  <!-- 4. Delivery ZIP (required) -->
-  <div class="mb-3">
-    <input type="text"
-           name="delivery_zip"
-           class="form-control"
-           placeholder="Delivery Zip Code"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="text" name="pickup_zip" class="form-control" placeholder="Pickup Zip Code" required pattern="^\\d{5}(-\\d{4})?$">
+            </div>
 
-  <!-- 5. Transport type (required) -->
-  <div class="mb-3">
-    <select name="transport_type"
-            class="form-select"
-            required>
-      <option value="">Select Transport Type</option>
-      <option value="Enclosed">Enclosed Transport</option>
-      <option value="Open">Open Transport</option>
-      <option value="Unsure">I'm Unsure</option>
-    </select>
-  </div>
+            <div class="mb-3">
+              <input type="text" name="delivery_zip" class="form-control" placeholder="Delivery Zip Code" required pattern="^\\d{5}(-\\d{4})?$">
+            </div>
 
-  <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
-</form>
+            <div class="mb-3">
+              <select name="transport_type" class="form-select" required>
+                <option value="">Select Transport Type</option>
+                <option value="Enclosed">Enclosed Transport</option>
+                <option value="Open">Open Transport</option>
+                <option value="Unsure">I'm Unsure</option>
+              </select>
+            </div>
 
-
+            <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
+          </form>
 
         </div>
       </div>
@@ -209,7 +198,8 @@
   </div>
 </div>
 
-<!-- Bootstrap JS -->
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="site.js"></script>
 </body>
 </html>

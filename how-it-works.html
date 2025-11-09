@@ -11,14 +11,8 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
 </head>
 <body>
 
@@ -31,20 +25,20 @@
     </button>
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
         <li class="nav-item"><a class="nav-link" href="why-choose.html">Why Choose Us</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         <li class="nav-item">
-  <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
-    Request a Quote
-  </a>
-</li>
+          <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
+            Request a Quote
+          </a>
+        </li>
       </ul>
     </div>
-  </divhttp://127.0.0.1:3000/images/5.JPG>
+  </div>
 </nav>
 
 <!-- HERO / BANNER -->
@@ -60,22 +54,13 @@
 <div class="container my-5">
   <div class="row justify-content-center">
     <div class="col-lg-8">
-
       <h2 class="mb-4">Shipping in 4 Steps</h2>
 
       <ul class="list-group mb-4">
-        <li class="list-group-item">
-          <strong>1. Provide Your Information:</strong> Fill out our form or call us with pickup/delivery details.
-        </li>
-        <li class="list-group-item">
-          <strong>2. Receive a Free Quote:</strong> We'll email you a custom quote in under 24 hours.
-        </li>
-        <li class="list-group-item">
-          <strong>3. Accept &amp; Pay Deposit:</strong> Lock in your price by paying a small deposit to secure the date.
-        </li>
-        <li class="list-group-item">
-          <strong>4. Pickup &amp; Delivery:</strong> We handle everything – from inspection to careful transport.
-        </li>
+        <li class="list-group-item"><strong>1. Provide Your Information:</strong> Fill out our form or call us with pickup/delivery details.</li>
+        <li class="list-group-item"><strong>2. Receive a Free Quote:</strong> We'll email you a custom quote in under 24 hours.</li>
+        <li class="list-group-item"><strong>3. Accept &amp; Pay Deposit:</strong> Lock in your price by paying a small deposit to secure the date.</li>
+        <li class="list-group-item"><strong>4. Pickup &amp; Delivery:</strong> We handle everything – from inspection to careful transport.</li>
       </ul>
 
       <p>
@@ -92,18 +77,13 @@
   <small>
     &copy; 2025 Auto Fury LLC – All rights reserved
     &middot; 
-    <a 
-      href="https://www.instagram.com/autofuryllc/" 
-      target="_blank"
-      rel="noopener"
-      class="text-decoration-none text-warning"
-    >
-      <!-- Instagram Icon from Bootstrap Icons -->
+    <a href="https://www.instagram.com/autofuryllc/" target="_blank" rel="noopener" class="text-decoration-none text-warning">
       <i class="bi bi-instagram"></i> Follow us
     </a>
   </small>
 </footer>
 
+<!-- QUOTE MODAL (hardened form) -->
 <div class="modal fade popup-modal" id="popup-modal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content p-4">
@@ -124,70 +104,52 @@
         </div>
         <div class="col-md-6">
           <p class="text-muted">Fill out the form below to get started:</p>
-          <!-- Embed your form here or use a simplified one: -->
-          <form name="modal-quote-form"
-      action="https://formsubmit.co/quotes@autofuryllc.com"
-      method="POST"
-      autocomplete="off">
 
-  <!-- FormSubmit hidden settings -->
-  <input type="hidden" name="_captcha"  value="false">
-  <input type="hidden" name="_subject"  value="New quote request from modal popup">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
+          <form
+            data-formsubmit
+            method="POST"
+            data-action-rev="moc.cllyrufotua@setouq/oc.timbusmrof//:sptth"
+            autocomplete="off"
+            novalidate
+          >
+            <input type="hidden" name="_subject"  value="New quote request from modal popup">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
+            <input type="hidden" name="_captcha"  value="true">
 
-  <!-- 1. Email (required) -->
-  <div class="mb-3">
-    <input type="email"
-           name="email"
-           class="form-control"
-           placeholder="Email"
-           required>
-  </div>
+            <!-- Honeypot -->
+            <div class="hp-wrap">
+              <label>Leave this field empty</label>
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+            </div>
 
-  <!-- 2. Phone (required) -->
-  <div class="mb-3">
-    <input type="tel"
-           name="phone"
-           class="form-control"
-           placeholder="Phone Number"
-           pattern="[\d\s\-]{10,15}"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
 
-  <!-- 3. Pickup ZIP (required) -->
-  <div class="mb-3">
-    <input type="text"
-           name="pickup_zip"
-           class="form-control"
-           placeholder="Pickup Zip Code"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required pattern="^[+()\\d\\s-]{10,20}$">
+            </div>
 
-  <!-- 4. Delivery ZIP (required) -->
-  <div class="mb-3">
-    <input type="text"
-           name="delivery_zip"
-           class="form-control"
-           placeholder="Delivery Zip Code"
-           required>
-  </div>
+            <div class="mb-3">
+              <input type="text" name="pickup_zip" class="form-control" placeholder="Pickup Zip Code" required pattern="^\\d{5}(-\\d{4})?$">
+            </div>
 
-  <!-- 5. Transport type (required) -->
-  <div class="mb-3">
-    <select name="transport_type"
-            class="form-select"
-            required>
-      <option value="">Select Transport Type</option>
-      <option value="Enclosed">Enclosed Transport</option>
-      <option value="Open">Open Transport</option>
-      <option value="Unsure">I'm Unsure</option>
-    </select>
-  </div>
+            <div class="mb-3">
+              <input type="text" name="delivery_zip" class="form-control" placeholder="Delivery Zip Code" required pattern="^\\d{5}(-\\d{4})?$">
+            </div>
 
-  <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
-</form>
+            <div class="mb-3">
+              <select name="transport_type" class="form-select" required>
+                <option value="">Select Transport Type</option>
+                <option value="Enclosed">Enclosed Transport</option>
+                <option value="Open">Open Transport</option>
+                <option value="Unsure">I'm Unsure</option>
+              </select>
+            </div>
 
+            <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
+          </form>
 
         </div>
       </div>
@@ -195,7 +157,8 @@
   </div>
 </div>
 
-<!-- Bootstrap JS (CDN) -->
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="site.js"></script>
 </body>
 </html>
