@@ -1,0 +1,66 @@
+body {
+  background-image: url('images/NewPictures/BG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Make sure all headers and structural elements are white */
+h2, h3, h4, h5, h6,
+p, small, span, th, label {
+  color: rgb(255, 255, 255) !important;
+}
+
+h1{
+  color: rgb(255, 0, 0) !important;
+}
+
+/* Optional: white placeholder text */
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+/* Optional: white links */
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffc107; /* yellow on hover for contrast */
+}
+
+/* Optional: make tables and forms readable */
+.table, .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: white;
+}
+
+/* Optional: override Bootstrap light backgrounds */
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* NEW: Hidden honeypot (screen-reader safe) */
+.hp-wrap {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px; height: 1px; overflow: hidden;
+}
