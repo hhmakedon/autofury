@@ -135,13 +135,6 @@ h6 {
   border-radius: 0.75rem;
 }
 
-.navbar-mini-logo {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  border-radius: 0.25rem;
-}
-
 .trust-icon {
   width: 3rem;
   height: 3rem;
