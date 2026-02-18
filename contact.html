@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Auto Fury LLC – Contact Us</title>
-  <meta name="description" content="Need help or have questions? Contact Auto Fury LLC today." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Bootstrap 5 CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Favicon -->
+  <meta charset="UTF-8">
+  <title>Auto Fury LLC - Contact Us</title>
+  <meta name="description" content="Need help or have questions? Contact Auto Fury LLC today.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-
-<!-- NAVIGATION -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">Auto Fury LLC</a>
@@ -23,129 +18,33 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
         <li class="nav-item"><a class="nav-link" href="why-choose.html">Why Choose Us</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-warning text-grey ms-lg-3" href="#" data-bs-toggle="modal" data-bs-target="#popup-modal">
-            Request a Quote
-          </a>
-        </li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-warning" href="contact.html">Request a Quote</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
-<div class="py-5 text-center">
-  <div class="container">
-    <h1 class="display-4 fw-bold">Contact Auto Fury LLC</h1>
-    <p class="lead">We’re here to help with your vehicle shipping needs.</p>
-  </div>
-</div>
-
-<!-- MAIN CONTENT - CONTACT FORM -->
-<div class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-md-8 col-lg-6">
-      <h2 class="mb-4">Get in Touch</h2>
-      <p class="mb-4">
-        Have questions or need a quote? Fill out the form below, or call us at 
-        <strong>(847) 773-0062</strong>. We’ll respond as quickly as possible.
-      </p>
-
-      <form
-        data-formsubmit
-        method="POST"
-        data-action-rev="moc.cllyrufotua@setouq/oc.timbusmrof//:sptth"
-        autocomplete="off"
-        novalidate
-      >
-        <input type="hidden" name="_subject"  value="New message from Auto Fury LLC site">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
-        <input type="hidden" name="_captcha"  value="true">
-
-        <!-- Honeypot -->
-        <div class="hp-wrap">
-          <label>Leave this field empty</label>
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off">
-        </div>
-
-        <div class="mb-3">
-          <label for="name" class="form-label fw-semibold">Name</label>
-          <input type="text" class="form-control" name="name" id="name" placeholder="Jane Doe" required />
-        </div>
-
-        <div class="mb-3">
-          <label for="email" class="form-label fw-semibold">Email</label>
-          <input type="email" class="form-control" name="email" id="email" placeholder="janedoe@example.com" required />
-        </div>
-
-        <div class="mb-3">
-          <label for="phone" class="form-label fw-semibold">Phone</label>
-          <input type="tel" name="phone" id="phone" class="form-control" placeholder="(555) 555-5555" required pattern="^[+()\\d\\s-]{10,20}$">
-        </div>
-
-        <div class="mb-3">
-          <label for="pickup_zip" class="form-label fw-semibold">Pickup Zip</label>
-          <input type="text" name="pickup_zip" id="pickup_zip" class="form-control" placeholder="12345 or 12345-6789" required pattern="^\\d{5}(-\\d{4})?$">
-        </div>
-
-        <div class="mb-3">
-          <label for="delivery_zip" class="form-label fw-semibold">Delivery Zip</label>
-          <input type="text" name="delivery_zip" id="delivery_zip" class="form-control" placeholder="12345 or 12345-6789" required pattern="^\\d{5}(-\\d{4})?$">
-        </div>
-
-        <div class="mb-3">
-          <label for="message" class="form-label fw-semibold">Message</label>
-          <textarea class="form-control" name="message" id="message" rows="5" placeholder="How can we assist you?" minlength="15" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary px-4">Send Message</button>
-      </form>
-
+<main>
+  <section class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h1 class="fw-bold display-5">Contact Auto Fury LLC</h1>
+      <p class="fs-5">Tell us what you need and we will send your quote quickly.</p>
+      <a href="tel:8477730062" class="btn btn-outline-light btn-lg">Call (847) 773-0062</a>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3 mt-5">
-  <small>
-    &copy; 2025 Auto Fury LLC – All rights reserved
-    &middot; 
-    <a href="https://www.instagram.com/autofuryllc/" target="_blank" rel="noopener" class="text-decoration-none text-warning">
-      <i class="bi bi-instagram"></i> Follow us
-    </a>
-  </small>
-</footer>
-
-<!-- QUOTE MODAL (hardened form) -->
-<div class="modal fade popup-modal" id="popup-modal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content p-4">
-      <div class="row">
-        <div class="col-md-6">
-          <strong>We Ship Across the USA</strong><br>
-          <strong>Shipping Your Vehicle in 4 Steps:</strong>
-          <ol>
-            <li>Provide Us Your Information</li>
-            <li>Receive a Free Quote Via Email in 24 Hours</li>
-            <li>Accept Quote, Pay & Establish Shipping Details</li>
-            <li>All Set! Prepare Your Vehicle.</li>
-          </ol>
-          <div>
-            <i class="bi bi-telephone-fill me-2"></i>
-            <a href="tel:8477730062" class="text-decoration-none">(847) 773-0062</a>
-          </div><hr>
-        </div>
-        <div class="col-md-6">
-          <p class="text-muted">Fill out the form below to get started:</p>
-
+  <section class="bg-light text-dark py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-7">
+          <h2 class="fw-bold mb-4">Get a Free Quote</h2>
           <form
             data-formsubmit
             method="POST"
@@ -153,52 +52,74 @@
             autocomplete="off"
             novalidate
           >
-            <input type="hidden" name="_subject"  value="New quote request from modal popup">
+            <input type="hidden" name="_subject" value="New message from Auto Fury LLC site">
             <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next"     value="https://www.autofuryllc.com/thank-you.html">
-            <input type="hidden" name="_captcha"  value="true">
+            <input type="hidden" name="_next" value="https://www.autofuryllc.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="true">
 
-            <!-- Honeypot -->
             <div class="hp-wrap">
               <label>Leave this field empty</label>
               <input type="text" name="_honey" tabindex="-1" autocomplete="off">
             </div>
 
             <div class="mb-3">
-              <input type="email" name="email" class="form-control" placeholder="Email" required>
+              <label for="name" class="form-label fw-semibold">Name</label>
+              <input type="text" class="form-control bg-white text-dark" name="name" id="name" placeholder="Jane Doe" required>
             </div>
 
             <div class="mb-3">
-              <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required pattern="^[+()\\d\\s-]{10,20}$">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control bg-white text-dark" name="email" id="email" placeholder="janedoe@example.com" required>
             </div>
 
             <div class="mb-3">
-              <input type="text" name="pickup_zip" class="form-control" placeholder="Pickup Zip Code" required pattern="^\\d{5}(-\\d{4})?$">
+              <label for="phone" class="form-label fw-semibold">Phone</label>
+              <input type="tel" class="form-control bg-white text-dark" name="phone" id="phone" placeholder="(555) 555-5555" pattern="^[+()\\d\\s-]{10,20}$" required>
             </div>
 
             <div class="mb-3">
-              <input type="text" name="delivery_zip" class="form-control" placeholder="Delivery Zip Code" required pattern="^\\d{5}(-\\d{4})?$">
+              <label for="pickup_zip" class="form-label fw-semibold">Pickup Zip</label>
+              <input type="text" class="form-control bg-white text-dark" name="pickup_zip" id="pickup_zip" placeholder="12345 or 12345-6789" pattern="^\\d{5}(-\\d{4})?$" required>
             </div>
 
             <div class="mb-3">
-              <select name="transport_type" class="form-select" required>
+              <label for="delivery_zip" class="form-label fw-semibold">Delivery Zip</label>
+              <input type="text" class="form-control bg-white text-dark" name="delivery_zip" id="delivery_zip" placeholder="12345 or 12345-6789" pattern="^\\d{5}(-\\d{4})?$" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="transport_type" class="form-label fw-semibold">Transport Type</label>
+              <select id="transport_type" name="transport_type" class="form-select bg-white text-dark" required>
                 <option value="">Select Transport Type</option>
                 <option value="Enclosed">Enclosed Transport</option>
                 <option value="Open">Open Transport</option>
-                <option value="Unsure">I'm Unsure</option>
+                <option value="Unsure">I am Unsure</option>
               </select>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100">Get A Quote</button>
-          </form>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control bg-white text-dark" name="message" id="message" rows="5" placeholder="How can we help with your shipment?" minlength="15" required></textarea>
+            </div>
 
+            <button type="submit" class="btn btn-primary btn-lg px-4">Get a Free Quote</button>
+          </form>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+</main>
 
-<!-- JS -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-center">
+    <hr class="border-secondary">
+    <p class="mb-2">&copy; 2025 Auto Fury LLC - All rights reserved</p>
+    <a href="https://www.instagram.com/autofuryllc/" target="_blank" rel="noopener" class="text-white text-decoration-none">
+      <i class="bi bi-instagram"></i> Follow us on Instagram
+    </a>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script defer src="site.js"></script>
 </body>
