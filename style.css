@@ -126,12 +126,20 @@ h6 {
 }
 
 .hero-image {
-  width: 250px !important;
-  height: 250px !important;
-  object-fit: cover;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
   border-radius: 0.75rem;
+}
+
+.navbar-mini-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 0.25rem;
 }
 
 .trust-icon {
