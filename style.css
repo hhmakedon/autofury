@@ -93,6 +93,31 @@ div.bg-white,
   color: var(--text-light) !important;
 }
 
+.force-white-dark {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: var(--text-dark) !important;
+}
+
+.force-white-dark h1,
+.force-white-dark h2,
+.force-white-dark h3,
+.force-white-dark h4,
+.force-white-dark h5,
+.force-white-dark h6,
+.force-white-dark p,
+.force-white-dark li,
+.force-white-dark label,
+.force-white-dark span {
+  color: var(--text-dark) !important;
+}
+
+.force-white-dark .card,
+.force-white-dark .card-body {
+  background-color: #ffffff !important;
+  color: var(--text-dark) !important;
+}
+
 .bg-light .text-muted,
 .card .text-muted {
   color: var(--muted-text) !important;
