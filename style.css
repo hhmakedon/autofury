@@ -151,6 +151,12 @@ div.bg-white,
   border-color: rgba(255, 255, 255, 0.18) !important;
 }
 
+.force-bright-text .trust-icon {
+  background: #ffffff !important;
+  color: var(--primary-color) !important;
+  border: 1px solid #d1d5db;
+}
+
 .bg-light .text-muted,
 .card .text-muted {
   color: var(--muted-text) !important;
