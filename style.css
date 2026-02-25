@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background-color: var(--light-bg);
+  background-color: transparent;
   background-image: url("images/NewPictures/BG.png");
   background-size: cover;
   background-position: center;
@@ -56,10 +56,17 @@ div.bg-dark {
 }
 
 .bg-light,
+.bg-white,
 section.bg-light,
+section.bg-white,
 div.bg-light,
+div.bg-white,
 .card.bg-light {
-  background-color: var(--light-bg) !important;
+  background-color: transparent !important;
+  background-image: url("images/NewPictures/BG.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   color: var(--text-dark) !important;
 }
 
