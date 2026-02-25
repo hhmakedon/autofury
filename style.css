@@ -118,6 +118,19 @@ div.bg-white,
   color: var(--text-dark) !important;
 }
 
+.force-dark-text h1,
+.force-dark-text h2,
+.force-dark-text h3,
+.force-dark-text h4,
+.force-dark-text h5,
+.force-dark-text h6,
+.force-dark-text p,
+.force-dark-text li,
+.force-dark-text label,
+.force-dark-text span {
+  color: var(--text-dark) !important;
+}
+
 .bg-light .text-muted,
 .card .text-muted {
   color: var(--muted-text) !important;
@@ -226,8 +239,17 @@ h6 {
 .form-select,
 textarea.form-control {
   background-color: #fff;
+  background-image: none !important;
   color: var(--text-dark);
   border-color: #ced4da;
+}
+
+.form-control.bg-white,
+.form-select.bg-white,
+textarea.form-control.bg-white {
+  background-color: #fff !important;
+  background-image: none !important;
+  color: var(--text-dark) !important;
 }
 
 .form-control:focus,
