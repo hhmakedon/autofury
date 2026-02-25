@@ -157,6 +157,13 @@ div.bg-white,
   border: 1px solid #d1d5db;
 }
 
+.force-bright-text .trust-item-card {
+  background-color: rgba(17, 24, 39, 0.86) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  padding: 1rem 0.85rem;
+}
+
 .bg-light .text-muted,
 .card .text-muted {
   color: var(--muted-text) !important;
