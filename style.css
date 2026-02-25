@@ -131,6 +131,26 @@ div.bg-white,
   color: var(--text-dark) !important;
 }
 
+.force-bright-text h1,
+.force-bright-text h2,
+.force-bright-text h3,
+.force-bright-text h4,
+.force-bright-text h5,
+.force-bright-text h6,
+.force-bright-text p,
+.force-bright-text li,
+.force-bright-text label,
+.force-bright-text span {
+  color: var(--text-light) !important;
+}
+
+.force-bright-text .card,
+.force-bright-text .card-body {
+  background-color: rgba(17, 24, 39, 0.82) !important;
+  color: var(--text-light) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
 .bg-light .text-muted,
 .card .text-muted {
   color: var(--muted-text) !important;
